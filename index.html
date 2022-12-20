@@ -4,115 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Album</title>
-
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/45ba6f1765.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <header>
-       Art
-    </header>
+    <nav id="Nav">
+        <div class="Row LargeFont PrimaryColor" id="navContent">
+            <a href="#">About</a>
+            <p>|</p>
+            <a href="#">Web Design</a>
+            <p>|</p>
+            <a href="#">Game Developemt</a>
+            <p>|</p>
+            <a href="#">Art</a>
+        </div>
+    </nav>
 
-    <section id = "ImageContainer">
-        <div class = "Image">
-            <img src = "Images/Fire .png">
-
-            <div class="text">
-                <h1>Heart of Fire</h1>
-
-                <p>Sometimes the things that scorch your heart are the moral values within you</p>
+    <section class="Loadin Static" id="Portrate" style="--LOrder: 2; --PosFrom: 100vh; --PosTo: 14vh">
+        <div class="CenterRow">
+            <img src="pfp_placeholder.webp" class="PrimaryColor" id="PortrateImage">
+            
+            <div>
+                <p class="LargeFont TextAlignLeft">Ethan Heimer:<p>
+                <p class="XLargeFont TextAlignLeft" id="PortrateText">Web Designer</p>
             </div>
         </div>
-
-        <div class = "Image">
-            <img src = "Images/Lighthouse.png">
-
-            <div class="text">
-                <h1>Lonely Lighthouse</h1>
-
-                <p>The light to your problems may not be where you think</p>
-            </div>
-        </div>
-
-        <div class = "Image">
-            <img src = "Images/Ship.png">
-
-            <div class="text">
-                <h1>The Sailent Ship Sailing The Silent Seas</h1>
-
-                <p>Sometimes the best thing to do is to pack up and sail the open seas of thought.</p>
-            </div>
-        </div>
-
-        <div class = "Image">
-            <img src = "Images/rose.png">
-
-            <div class="text">
-                <h1>Unloved Rose</h1>
-
-                <p>A stricken rose flowing im the everlast seas of the imagination.</p>
-            </div>
-        </div>
-
-        <div class = "Image">
-            <img src = "Images/Yin Yang Sunset.png">
-
-            <div class="text">
-                <h1>Pacific Peace</h1>
-
-                <p>Balance, bellowed by the ocean, can be seen over the skyline</p>
-            </div>
-        </div>
-
-        <div class = "Image">
-            <img src = "Images/Midnight Moon (1).png">
-
-            <div class="text">
-                <h1>Midnight Moon</h1>
-
-                <p>Life, created from the destruction of planets, will eventualy lead to the destruction of planets.</p>
-            </div>
-        </div>
-
-        <div class = "Image">
-            <img src = "Images/Sunset 2.png">
-
-            <div class="text">
-                <h1>Cold Days Floated Alone</h1>
-
-                <p>As the moon ends the hot quiet sun, the stars float alone in endless space and time.</p>
-            </div>
-        </div>
-
-        <div class = "Image">
-            <img src = "Images/Beach 2 Moon.png">
-
-            <div class = "text">
-                <h1>Star Luna</h1>
-
-                <p>Cold californa nights start at the sight of the moon. Acient civilizations see the moon as a symbol for death.</p>
-            </div>
-        </div>
-
-        <div class = "Image">
-            <img src = "Images/Beach 2.png">
-
-            <div class = "text">
-                <h1>Sunset Of The Sol</h1>
-
-                <p>Sometimes somthing so deadly can create somthing so beautiful.</p>
-            </div>
-        </div>
-
     </section>
 
-    <footer>
-        All Rights &copy Reserved
-    </footer>
+    <section class="Loadin" id="Content" style="--LOrder: 3; --PosFrom: 150vh; --PosTo: 75vh">
+
+        <div id="Links" class="Largefont PrimaryColor">
+            <p class="XLargeFont">Web Design</p>
+            <div class="Grid">
+                <a class="LinkCard SecondaryColor Colum XLargeFont" href="https://ethan-heimer.github.io/Resume/">
+                    Resume
+                    <i class="fa-regular fa-file TextGradient"></i>
+                </a>
+
+                <a class="LinkCard SecondaryColor Colum XLargeFont" href="https://ethan-heimer.github.io/Calculator-App/">
+                    Calcultor App
+                    <i class="fa-solid fa-calculator TextGradient"></i>
+                </a>
+
+                <a class="LinkCard SecondaryColor Colum XLargeFont" href="https://ethan-heimer.github.io/Quiz-App/">
+                    Quiz App
+                    <i class="fa-solid fa-spell-check TextGradient"></i>
+                </a>
+
+                <a class="LinkCard SecondaryColor Colum XLargeFont" href="https://ethan-heimer.github.io/Color-Guess-Game-2/">
+                    Color Guesser
+                    <i class="fa-solid fa-eye-dropper TextGradient"></i>
+                </a>
+
+                <a class="LinkCard SecondaryColor Colum XLargeFont" href="https://ethan-heimer.github.io/Photo-Album.github.io/">
+                    Photo Gallary
+                    <i class="fa-regular fa-image TextGradient"></i>
+                </a>
+
+                <a class="LinkCard SecondaryColor Colum XLargeFont" href="https://ethan-heimer.github.io/Animation/">
+                    CSS Animation
+                    <i class="fa-solid fa-up-down-left-right TextGradient"></i>
+                </a>
+                <a class="LinkCard SecondaryColor Colum XLargeFont" href="https://ethan-heimer.github.io/Arizona-Website.github.io/">
+                    Flexbox Page
+                    <i class="fa-solid fa-table-cells-large TextGradient"></i>
+                </a>
+                <a class="LinkCard SecondaryColor Colum XLargeFont" href="https://ethan-heimer.github.io/Forms-Project/">
+                    Forms
+                    <i class="fa-solid fa-check TextGradient"></i>
+                </a>
+                <a class="LinkCard SecondaryColor Colum XLargeFont" href="https://ethan-heimer.github.io/JQuery-Project-2/">
+                    Jquery
+                    <i class="fa-brands fa-square-js TextGradient"></i>
+                </a>
+            </div>
+        </div>
+
+        <footer class="SmallFont">
+          Ethan Heimer- @Copy All Rights 
+       </footer>
+    </section>
+
+   
 </body>
-</html>
+</html>  
